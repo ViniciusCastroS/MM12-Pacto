@@ -1,0 +1,61 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.bg {
+    background-image: url("/assets/Background.png");
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+.form-control {
+    width: 100%;
+    color: aliceblue;
+    background-color: transparent !important;
+    border-color: #5E89FF !important;
+}
+
+::placeholder {
+    color: transparent
+}
+
+#user {
+    font-family: openSans;
+    font-weight: 500 !important;
+    color: #6B93FF;
+}
+
+#password {
+    font-family: openSans;
+    font-weight: 500 !important;
+    color: #6B93FF;
+}
+
+#square {
+    width: 15px;
+    height: 15px;
+    background: #FF5D38;
+    margin: 0 0;
+    margin-right: 30%;
+    margin-bottom: 5%;
+}
+
+#checkbox{
+    font-family: openSans;
+    font-weight: 500 !important;
+    color: #6B93FF;
+}
+
+#cadastro{
+    font-family: openSans;
+    font-weight: 500 !important;
+    color: #6B93FF;
+}

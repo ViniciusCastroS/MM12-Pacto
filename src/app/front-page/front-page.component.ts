@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-front-page',
@@ -6,10 +7,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./front-page.component.css']
 })
 export class FrontPageComponent implements OnInit {
+  profile = '';
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
-
+  oticas(profile) {
+    this.profile = 'oticas';
+    console.log(this.profile)
+    this.router.navigate(['login', this.profile]);
+  }
+  solution() {
+    this.profile = 'solution';
+    console.log(this.profile)
+    this.router.navigate(['login', this.profile]);
+  }
+  laboratorio() {
+    this.profile = 'laboratorio'
+    console.log(this.profile)
+    this.router.navigate(['login', this.profile]);
+  }
+  
 }
