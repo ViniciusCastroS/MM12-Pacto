@@ -3,9 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { Login } from './login/login.component'
 import { FrontPageComponent } from './front-page/front-page.component';
-
-
-
+import { VouchersComponent } from './vouchers/vouchers.component';
 
 const routes: Routes = [
   {
@@ -19,6 +17,8 @@ const routes: Routes = [
   },
   {
     path: 'login/laboratorio', component: Login
+  },{
+    path: 'vouchers', component: VouchersComponent
   },
   {
     path: 'frontComponent', component: FrontPageComponent

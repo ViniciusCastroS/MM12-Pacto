@@ -8,20 +8,22 @@ html {
   padding:0;
   border:0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .bg {
   background-image: url("/assets/Background.png");
   height: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
 }
 
 @font-face {
   font-family: openSans;
   src: url(assets/font/OpenSans-Regular.ttf) format("opentype");
+}
+@font-face{
+  font-family: montSerratBold;
+  src: url(assets/font/Montserrat-Bold.otf) format("opentype");
 }
 
 

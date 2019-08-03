@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 
@@ -44,5 +44,8 @@ export class Login implements OnInit {
       console.log('cpf', this.showCPF)
       console.log('cpnj', this.showCNPJ)
     }
+  }
+  logIn(){
+    this.route.navigate(['vouchers']);
   }
 }

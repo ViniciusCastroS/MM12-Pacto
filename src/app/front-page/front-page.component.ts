@@ -13,7 +13,7 @@ export class FrontPageComponent implements OnInit {
 
   ngOnInit() {
   }
-  oticas(profile) {
+  oticas() {
     this.profile = 'oticas';
     console.log(this.profile)
     this.router.navigate(['login', this.profile]);
@@ -28,5 +28,4 @@ export class FrontPageComponent implements OnInit {
     console.log(this.profile)
     this.router.navigate(['login', this.profile]);
   }
-  
 }
