@@ -8,7 +8,7 @@ html {
   padding:0;
   border:0;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .bg {
@@ -24,6 +24,10 @@ html {
 @font-face{
   font-family: montSerratBold;
   src: url(assets/font/Montserrat-Bold.otf) format("opentype");
+}
+@font-face{
+  font-family: helveticaNeueBold;
+  src: url(assets/font/helvetica-neue-bold.ttf) format("opentype");
 }
 
 

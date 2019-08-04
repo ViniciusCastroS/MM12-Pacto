@@ -4,19 +4,20 @@
   background-color: white;
   left: 0px;
   right: 0px;
-  overflow: hidden;
-
+  width: auto;
+  height: auto;
+  
 }
-#background{
+
+#background {
   background-image: url("/assets/backgroundVales.png");
 }
+
 #footer {
-  position: absolute;
   bottom: 0px;
   background-color: white;
   left: 0px;
   right: 0px;
-  overflow: hidden;
 }
 
 #progPact {
@@ -67,28 +68,52 @@
   color: #FF5D38;
   margin-left: 4%
 }
-#texto-busca{
+
+#texto-busca {
   font-family: montSerratBold;
   font-size: 14px;
   color: #707070;
   margin-left: 4%
 }
-#searchButton{
+
+#searchButton {
   background: transparent;
   border: transparent;
   cursor: default
 }
-#butao{
-  height: 45px;
+
+#tabela {
+  margin-left: 9%;
+  margin-bottom: 4%;
+  width: 75%;
 }
-#otobutao{
-  height: 45px;
+
+#liberado {
+  font-family: openSans;
+  font-size: 13px;
+  font-weight: bold;
+  color: #7DC855;
 }
-.form-control{
+
+#bloqueado{
+  font-family: openSans;
+  font-size: 13px;
+  font-weight: bold;
+  color: #FF3B3B;
+}
+
+#headTable{
+  font-family: helveticaNeueBold;
+  font-size: 15px;
+  color: #707070;
+}
+
+.form-control {
   width: 25%;
   margin-left: 4%;
   margin-right: 70%;
 }
+
 form.example input[type=text] {
   padding: 10px;
   font-size: 17px;
@@ -109,7 +134,23 @@ i.fa {
   font-size: 20px;
   height: 30%
 }
+
 i.fa:hover {
   background: #0b7dda;
   cursor: pointer;
+}
+
+th {
+  text-align: center;
+}
+
+td {
+  text-align: center;
+  font-family: openSans;
+  font-size: 13px;
+  color: #707070;
+}
+
+.table td {
+  text-align: center;
 }

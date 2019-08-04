@@ -1,10 +1,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body id="background">
-    <div id="header">
-        <div class="justify-content-end">
-            <div class="d-flex flex-row bd-highlight">
-                <div class="p-2 bd-highlight" id="progPact"><img src="..\assets\ProgramaPacto.png"></div>
+    <div class="row" id="header">
+        <div class="justify-content-end col">
+            <div class="d-flex flex-row bd-highlight col">
+                <div class="p-2 bd-highlight col" id="progPact"><img src="..\assets\ProgramaPacto.png"></div>
                 <div class="p-2 ml-auto mt-3 bd-highlight"><a href="" id="vales"><img class="mr-1"
                             src="..\assets\credit-card.png">Meus Vales</a></div>
                 <div class="p-2 mr-2 mt-3 highlight"><a id="dados" href=""><img class="mr-1"
@@ -14,20 +14,93 @@
             </div>
         </div>
     </div>
-
     <div class="card-body" id="headerVale">
         <p class="card-text" id="headerVale">Meus Vales</p>
         <p id="square"></p>
         <p class="card-text" id="busca">Busca</p>
         <p class="card-text" id="texto-busca">Use o campo abaixo e pesquise tudo sobre números de vales, total ou código
             de vouchers, produtos, status de vouchers e sua data de validade.</p>
-        <!-- The form -->
         <form class="example">
-                <input type="text" class="search-query mt-4" placeholder="Buscar..."/>
-                <button class="btn mb-4"><i class="fa fa-search"></i></button>       
+            <input type="text" class="search-query mt-4" placeholder="Buscar..." />
+            <button class="btn mb-4"><i class="fa fa-search"></i></button>
         </form>
     </div>
-
+    <table class="table table-hover" id="tabela">
+        <thead>
+            <tr>
+                <th scope="col" id="headTable">Produto</th>
+                <th scope="col" id="headTable">Status do Voucher</th>
+                <th scope="col" id="headTable">Código do Voucher</th>
+                <th scope="col" id="headTable">Validade do Voucher</th>
+                <th scope="col" id="headTable">Nota Fiscal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bloco Varilux</td>
+                <td id="bloqueado">BLOQUEADO</td>
+                <td>21225459649871541</td>
+                <td>24/03/2019</td>
+                <td>94325734975238573257035390</td>
+            </tr>
+            <tr>
+                <td>Bloco Varilux</td>
+                <td id="liberado">LIBERADO</td>
+                <td>21225459649871541</td>
+                <td>24/03/2019</td>
+                <td>94325734975238573257035390</td>
+            </tr>
+            <tr>
+                <td>Bloco Varilux</td>
+                <td id="liberado">LIBERADO</td>
+                <td>21225459649871541</td>
+                <td>24/03/2019</td>
+                <td>94325734975238573257035390</td>
+            </tr>
+            <tr>
+                <td>Bloco Varilux</td>
+                <td id="bloqueado">BLOQUEADO</td>
+                <td>21225459649871541</td>
+                <td>24/03/2019</td>
+                <td>94325734975238573257035390</td>
+            </tr>
+            <tr>
+                <td>Bloco Varilux</td>
+                <td id="liberado">LIBERADO</td>
+                <td>21225459649871541</td>
+                <td>24/03/2019</td>
+                <td>94325734975238573257035390</td>
+            </tr>
+            <tr>
+                <td>Bloco Varilux</td>
+                <td id="bloqueado">VENCIDO</td>
+                <td>21225459649871541</td>
+                <td>24/03/2019</td>
+                <td>94325734975238573257035390</td>
+            </tr>
+            <tr>
+                <td>Bloco Varilux</td>
+                <td id="liberado">LIBERADO</td>
+                <td>21225459649871541</td>
+                <td>24/03/2019</td>
+                <td>94325734975238573257035390</td>
+            </tr>
+            <tr>
+                <td>Bloco Varilux</td>
+                <td id="bloqueado">VENCIDO</td>
+                <td>21225459649871541</td>
+                <td>23/03/2019</td>
+                <td>94325734975238573257035390</td>
+            </tr>
+            <tr>
+                <td>Lente Varilux</td>
+                <td id="bloqueado">BLOQUEADO</td>
+                <td>02345794939394559540</td>
+                <td>25/04/2019</td>
+                <td>94325734975238573257035390</td>
+            </tr>
+        </tbody>
+    </table>
     <div id="footer">
         <div class="justify-content-end">
             <div class="d-flex flex-row bd-highlight">
