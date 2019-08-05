@@ -1,21 +1,19 @@
-body,
-
-
-html {
+body, html {
   height: 100%;
   width: 100%;
-  margin:0;
-  padding:0;
-  border:0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .bg {
   background-image: url("/assets/Background.png");
-  height: 100%;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  position: relative;
+  clear: both;
 }
 
 
