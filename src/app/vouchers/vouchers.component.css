@@ -1,0 +1,156 @@
+#header {
+  position: absolute;
+  top: 0px;
+  background-color: white;
+  left: 0px;
+  right: 0px;
+  width: auto;
+  height: auto;
+  
+}
+
+#background {
+  background-image: url("/assets/backgroundVales.png");
+}
+
+#footer {
+  bottom: 0px;
+  background-color: white;
+  left: 0px;
+  right: 0px;
+}
+
+#progPact {
+  margin-left: 4%
+}
+
+#cartoes {
+  font-family: openSans;
+  font-weight: 800;
+  color: #9A9A9A;
+}
+
+#vales {
+  font-family: openSans;
+  font-weight: bold;
+  color: #FF5D38;
+}
+
+#dados {
+  font-family: openSans;
+  font-weight: 800;
+  color: #0044FF;
+}
+
+#header {
+  font-family: montSerratBold;
+  color: #0044FF;
+}
+
+#headerVale {
+  margin-top: 3%;
+  font-family: montSerratBold;
+  font-size: 70px;
+  color: #0044FF;
+  margin-left: 4%
+}
+
+#square {
+  width: 15px;
+  height: 15px;
+  background: #FF5D38;
+  margin-left: 4.3%
+}
+
+#busca {
+  font-family: montSerratBold;
+  font-size: 30px;
+  color: #FF5D38;
+  margin-left: 4%
+}
+
+#texto-busca {
+  font-family: montSerratBold;
+  font-size: 14px;
+  color: #707070;
+  margin-left: 4%
+}
+
+#searchButton {
+  background: transparent;
+  border: transparent;
+  cursor: default
+}
+
+#tabela {
+  margin-left: 9%;
+  margin-bottom: 4%;
+  width: 75%;
+}
+
+#liberado {
+  font-family: openSans;
+  font-size: 13px;
+  font-weight: bold;
+  color: #7DC855;
+}
+
+#bloqueado{
+  font-family: openSans;
+  font-size: 13px;
+  font-weight: bold;
+  color: #FF3B3B;
+}
+
+#headTable{
+  font-family: helveticaNeueBold;
+  font-size: 15px;
+  color: #707070;
+}
+
+.form-control {
+  width: 25%;
+  margin-left: 4%;
+  margin-right: 70%;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px grey;
+  border-radius: 10px;
+  float: left;
+  margin-left: 4%;
+  width: 30%;
+  height: 10%;
+  background: #f1f1f1;
+}
+
+i.fa {
+  display: inline-block;
+  border-radius: 80px;
+  box-shadow: 0px 0px 2px #888;
+  padding: 0.5em;
+  font-size: 20px;
+  height: 30%
+}
+
+i.fa:hover {
+  background: #0b7dda;
+  cursor: pointer;
+}
+
+th {
+  text-align: center;
+}
+
+td {
+  text-align: center;
+  font-family: openSans;
+  font-size: 13px;
+  color: #707070;
+}
+
+.table td {
+  text-align: center;
+}

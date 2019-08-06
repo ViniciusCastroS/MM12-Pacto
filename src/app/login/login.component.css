@@ -1,0 +1,69 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+.form-control {
+    width: 100%;
+    color: aliceblue;
+    background-color: transparent !important;
+    border-color: #5E89FF !important;
+}
+
+::placeholder {
+    color: transparent
+}
+
+#user {
+    font-family: openSans;
+    font-weight: 500 !important;
+    color: #6B93FF;
+}
+
+#password {
+    font-family: openSans;
+    font-weight: 500 !important;
+    color: #6B93FF;
+}
+
+#square {
+    width: 15px;
+    height: 15px;
+    background: #FF5D38;
+    margin: 0 0;
+    margin-right: 30%;
+    margin-bottom: 5%;
+}
+
+#checkbox{
+    font-family: openSans;
+    font-weight: 500 !important;
+    color: #6B93FF;
+}
+
+#cadastro{
+    font-family: openSans;
+    font-weight: 500 !important;
+    color: #6B93FF;
+}
+
+#entrar{
+    background-color: #FF5D38;
+    font-family: openSans;
+    font-weight: 500 !important;
+    color:aliceblue;
+}
+
+#footer{
+    position:absolute;
+    bottom:0px; 
+    background-color: white;
+    left:0px; 
+    right:0px; 
+    overflow:hidden;
+  }
+  

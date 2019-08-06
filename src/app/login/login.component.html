@@ -1,15 +1,89 @@
-<div>
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-    <a class="navbar-brand brand-custom" href="#">Angular 7 Routing Example</a>
-    <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link login-custom" href="#">Students <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link register-custom" href="#">Home</a>
-            </li>
-        </ul>
+<div class="bg">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto pt-5">
+                <a href=""><img src="..\assets\Logo.png"></a>
+                <h2 *ngIf="oticas" class="d-flex justify-content-center">
+                    <img class="pt-3" src="..\assets\Óticas.png">
+                </h2>
+                <h1 *ngIf="oticas" class="d-flex justify-content-md-center">
+                    <p id="square"></p>
+                </h1>
+                <h2 *ngIf="solutions" class="d-flex justify-content-center container">
+                    <img class="pt-3" src="..\assets\EquipeSolutions.png">
+                </h2>
+                <h2 *ngIf="solutions" style="width: 24%" class="d-flex justify-content-center">
+                    <p id="square"></p>
+                </h2>
+                <h2 *ngIf="laboratorio" class="d-flex justify-content-center container">
+                    <img class="pt-3" src="..\assets\Laboratórios.png">
+                </h2>
+                <h2 *ngIf="laboratorio" style="width: 54%" class="d-flex justify-content-center">
+                    <p id="square"></p>
+                </h2>
+
+                <div class="d-flex justify-content-center align-items-center container">
+                    <div class="row ">
+                        <form action="">
+                            <div class="form-group" *ngIf="showCNPJ">
+                                <label for="username" id="user">CNPJ</label>
+                                <input type="text" class="form-control" id="cnpj" placeholder="CNPJ" required />
+                                <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                                    <div *ngIf="f.username.errors.required">Username is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group" *ngIf="showCPF">
+                                <label for="username" id="user">CPF</label>
+                                <input type="text" class="form-control" id="cpf" placeholder="CPF" required />
+                                <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                                    <div *ngIf="f.username.errors.required">Username is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label id="password">Senha</label>
+                                <input type="password" formControlName="password" class="form-control"
+                                    placeholder="Senha" required />
+                                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                                    <div *ngIf="f.password.errors.required">Password is required</div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end pb-3 links">
+                                <a href="#">Esqueci minha senha</a>
+                            </div>
+                            <div class="custom-control custom-checkbox pb-3">
+                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+                                <label id="checkbox" class="custom-control-label" for="defaultUnchecked">Mantenha-me
+                                    conectado</label>
+                            </div>
+                            <div class="form-group d-flex justify-content-center">
+                                <button type="button" id="entrar" class="btn mb-2" (click)="logIn()">Entrar</button>
+                            </div>
+                            <span class="form-group d-flex justify-content-center" id="cadastro">Ainda não tem
+                                cadastro?<a routerLink="/register" style="margin-left: 5px">Clique aqui</a></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</nav>
+</div>
+<div id="footer">
+    <div class="justify-content-start">
+        <div class="d-flex flex-row bd-highlight">
+            <div class="p-2 bd-highlight"><a href="https://www.varilux.com.br"><img src="..\assets\Varilux.png"></a>
+            </div>
+            <div class="p-2 bd-highlight"><a href="http://www.crizal.com.br/"><img src="..\assets\Crizal.png"></a></div>
+            <div class="p-2 bd-highlight"><a href="http://www.transitions.com"><img src="..\assets\Transitions.png"></a>
+            </div>
+            <div class="p-2 bd-highlight"><a
+                    href="https://www.essilor.pt/lentes/essilor-sun/lentes-polarizadas-xperio"><img
+                        src="..\assets\Xperio.png"></a></div>
+            <div class="p-2 bd-highlight"><a href="https://www.eyezen.com.br/"><img src="..\assets\Eyezen.png"></a>
+            </div>
+            <div class="p-2 flex-grow-1 bd-highlight"><a href="https://www.lenteskodak.com.br/"><img
+                        src="..\assets\LentesKodak.png"></a></div>
+            <div class="p-2 bd-highlight"><a href="http://www.essilor.com.br/"><img src="..\assets\Essilor.png"></a>
+            </div>
+        </div>
+    </div>
 </div>

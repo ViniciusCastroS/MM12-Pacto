@@ -16,4 +16,17 @@ body, html {
   clear: both;
 }
 
+@font-face {
+  font-family: openSans;
+  src: url(assets/font/OpenSans-Regular.ttf) format("opentype");
+}
+@font-face{
+  font-family: montSerratBold;
+  src: url(assets/font/Montserrat-Bold.otf) format("opentype");
+}
+@font-face{
+  font-family: helveticaNeueBold;
+  src: url(assets/font/helvetica-neue-bold.ttf) format("opentype");
+}
+
 
