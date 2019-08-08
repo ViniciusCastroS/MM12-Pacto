@@ -6,16 +6,6 @@ body, html {
   box-sizing: border-box;
 }
 
-.bg {
-  background-image: url("/assets/Background.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  position: relative;
-  clear: both;
-}
-
 @font-face {
   font-family: openSans;
   src: url(assets/font/OpenSans-Regular.ttf) format("opentype");
@@ -28,5 +18,6 @@ body, html {
   font-family: helveticaNeueBold;
   src: url(assets/font/helvetica-neue-bold.ttf) format("opentype");
 }
+
 
 

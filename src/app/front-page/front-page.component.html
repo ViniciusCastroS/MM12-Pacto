@@ -1,15 +1,14 @@
 <div class="bg containerFront">
   <div class="row" style="width: 100%; margin: 0;">
-    <div class="col-md-12 pt-5 text-center" style="padding: 0;">
+    <div class="col-md-12 text-center divProg" style="padding: 0;">
       <img class="logo img-responsive" src="..\assets\Logo.png">
-      <h3 style="color: white" class="text-center pt-5">Selecione seu perfil</h3>
+      <h3 style="color: white" class="text-center pt-3 perfil">Selecione seu perfil</h3>
       <br>
     </div>
   </div>
-
   <div class="cards row">
     <div class="col-md-4">
-      <a class="card-block text-decoration-none" href="https://google.com/">
+      <a class="card-block text-decoration-none" (click)="oticas()">
         <div class="card card-a text-center text-white bg-primary pt-3">
           <h5 class="card-title">Óticas</h5>
           <div class="card-body">
@@ -21,8 +20,8 @@
       </a>
     </div>
     <div class="col-md-4">
-      <a class="card-block text-decoration-none" href="https://web.whatsapp.com/">
-        <div class="card card-a text-center text-white bg-primary pt-3">
+      <a class="card-block text-decoration-none" (click)="solution()">
+        <div class="card card-b text-center text-white bg-primary pt-3">
           <h5 class="card-title">Equipe Solutions</h5>
           <div class="card-body">
             <p class="card-text">Área destinada à equipe Essilor. Acesse com detalhes as informações necessárias
@@ -33,8 +32,8 @@
       </a>
     </div>
     <div class="col-md-4">
-      <a class="card-block text-decoration-none register-custom" href="/loginComponent">
-        <div class="card card-a text-center text-white bg-primary pt-3">
+      <a class="card-block text-decoration-none register-custom" (click)="laboratorio()">
+        <div class="card card-c text-center text-white bg-primary pt-3">
           <h5 class="card-title">Laboratório</h5>
           <div class="card-body">
             <p class="card-text">Área destinada a gestores de laboratórios. Valide e libere os vouchers que serão
@@ -45,3 +44,32 @@
     </div>
   </div>
 </div>
+<div>
+  <div class="row" style="width: 100%" id="footer">
+    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+      <ul>
+        <li>
+          <a href="https://www.varilux.com.br"><img src="..\assets\Varilux.png"></a>
+        </li>
+        <li>
+          <a href="http://www.crizal.com.br/"><img src="..\assets\Crizal.png"></a>
+        </li>
+        <li>
+          <a href="http://www.transitions.com"><img src="..\assets\Transitions.png"></a>
+        </li>
+        <li>
+          <a href="https://www.essilor.pt/lentes/essilor-sun/lentes-polarizadas-xperio"><img
+              src="..\assets\Xperio.png"></a>
+        </li>
+        <li>
+          <a href="https://www.eyezen.com.br/"><img src="..\assets\Eyezen.png"></a>
+        </li>
+        <li>
+          <a href="https://www.lenteskodak.com.br/"><img src="..\assets\LentesKodak.png"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12" id="essilor"><a href="http://www.essilor.com.br/"><img
+          src="..\assets\Essilor.png"></a>
+    </div>
+  </div>

@@ -1,11 +1,7 @@
-html {
-    height: 100%;
+.logo {
+    max-width: 500px;
     width: 100%;
-    margin: 0;
-    padding: 0;
-    border: 0;
 }
-
 
 .form-control {
     width: 100%;
@@ -30,40 +26,124 @@ html {
     color: #6B93FF;
 }
 
-#square {
+.squareOticas {
     width: 15px;
     height: 15px;
     background: #FF5D38;
-    margin: 0 0;
-    margin-right: 30%;
     margin-bottom: 5%;
 }
 
-#checkbox{
+#checkbox {
     font-family: openSans;
     font-weight: 500 !important;
     color: #6B93FF;
 }
 
-#cadastro{
+#cadastro {
     font-family: openSans;
     font-weight: 500 !important;
     color: #6B93FF;
 }
 
-#entrar{
+#entrar {
     background-color: #FF5D38;
     font-family: openSans;
     font-weight: 500 !important;
-    color:aliceblue;
+    color: aliceblue;
 }
 
-#footer{
-    position:absolute;
-    bottom:0px; 
-    background-color: white;
-    left:0px; 
-    right:0px; 
-    overflow:hidden;
+#footer {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
   }
-  
+  #footer ul{
+    list-style-type: none;
+    padding-left: 0px;
+  }
+  #footer li{
+    display: inline-block;
+    margin-right: 10px;
+  }
+  #essilor{
+    text-align: right;
+  }
+
+.cards {
+    max-width: 1020px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card-a {
+    margin-bottom: 15px;
+}
+
+p.card-text {
+    font-size: 15px;
+}
+
+.bg {
+    background-image: url("/assets/Background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    clear: both;
+}
+
+@media (min-width: 1281px) {
+    .bg {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bg {
+        height: 100%;
+    }
+    #footer{
+        text-align: center;
+        margin: 0px;
+      }
+      #essilor{
+        text-align: center;
+      }
+}
+
+@media screen and (max-width: 768px) {
+    .containerLogin {
+        padding: 15px;
+        height: 100%;
+    }
+    
+    .solution {
+        padding: 15px;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .containerLogin {
+        height: 100vh;
+    }
+    .card-body {
+        padding: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .imgSolut {
+        padding: 15px;
+        height: 100%;
+        width: 100%;
+    }
+    .imgLab {
+        padding: 15px;
+        height: 100%;
+        width: 100%;
+    }
+}
