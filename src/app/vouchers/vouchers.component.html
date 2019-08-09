@@ -1,127 +1,175 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div id="background">
+    <div class="container">
+        <div class="row" id="header" style="width: 100%">
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                <ul id="ulProg">
+                    <li>
+                        <img id="imgPacto" src="..\assets\ProgramaPacto.png">
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                <ul id="headerRight">
+                    <li>
+                        <a href="" id="vales">
+                            <img class="mr-1" src="..\assets\credit-card.png">Meus Vales</a>
+                    </li>
+                    <li>
+                        <a id="dados" href="">
+                            <img class="mr-1" src="..\assets\file-graphic.png">Meus Dados</a>
+                    </li>
+                    <li>
+                        <a id="iconUser" href="">
+                            <img id="userIcon" src="..\..\assets\user-solid.svg"></a>
+                    </li>
+                    <li>
+                        <a id="dados" href=""> Olá, Cosme Vinicius</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="containerVale">
+        <div class="card-body" id="headerVale">
+            <p class="card-text headerMeusVales">Meus Vales</p>
+            <p id="square"></p>
+            <p class="card-text" id="busca">Busca</p>
+            <p class="card-text" id="texto-busca">Use o campo abaixo e pesquise tudo sobre números de vales, total ou
+                código
+                de vouchers, produtos, status de vouchers e sua data de validade.</p>
+            <form class="example">
+                <input id="search" type="text" class="search-query mt-4" placeholder="Buscar..." />
+                <button class="btn mb-4"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div id="tabela">
+            <div class="row" style="width: 100%">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col" id="headTable">Produto</th>
+                            <th scope="col" id="headTable">Status do Voucher</th>
+                            <th scope="col" id="headTable">Código do Voucher</th>
+                            <th scope="col" id="headTable">Validade do Voucher</th>
+                            <th scope="col" id="headTable">Nota Fiscal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bloco Varilux</td>
+                            <td id="bloqueado">BLOQUEADO</td>
+                            <td>21225459649871541</td>
+                            <td>24/03/2019</td>
+                            <td>94325734975238573257035390</td>
+                        </tr>
+                        <tr>
+                            <td>Bloco Varilux</td>
+                            <td id="liberado">LIBERADO</td>
+                            <td>21225459649871541</td>
+                            <td>24/03/2019</td>
+                            <td>94325734975238573257035390</td>
+                        </tr>
+                        <tr>
+                            <td>Bloco Varilux</td>
+                            <td id="liberado">LIBERADO</td>
+                            <td>21225459649871541</td>
+                            <td>24/03/2019</td>
+                            <td>94325734975238573257035390</td>
+                        </tr>
+                        <tr>
+                            <td>Bloco Varilux</td>
+                            <td id="bloqueado">BLOQUEADO</td>
+                            <td>21225459649871541</td>
+                            <td>24/03/2019</td>
+                            <td>94325734975238573257035390</td>
+                        </tr>
+                        <tr>
+                            <td>Bloco Varilux</td>
+                            <td id="liberado">LIBERADO</td>
+                            <td>21225459649871541</td>
+                            <td>24/03/2019</td>
+                            <td>94325734975238573257035390</td>
+                        </tr>
+                        <tr>
+                            <td>Bloco Varilux</td>
+                            <td id="bloqueado">VENCIDO</td>
+                            <td>21225459649871541</td>
+                            <td>24/03/2019</td>
+                            <td>94325734975238573257035390</td>
+                        </tr>
+                        <tr>
+                            <td>Bloco Varilux</td>
+                            <td id="liberado">LIBERADO</td>
+                            <td>21225459649871541</td>
+                            <td>24/03/2019</td>
+                            <td>94325734975238573257035390</td>
+                        </tr>
+                        <tr>
+                            <td>Bloco Varilux</td>
+                            <td id="bloqueado">VENCIDO</td>
+                            <td>21225459649871541</td>
+                            <td>23/03/2019</td>
+                            <td>94325734975238573257035390</td>
+                        </tr>
+                        <tr>
+                            <td>Lente Varilux</td>
+                            <td id="bloqueado">BLOQUEADO</td>
+                            <td>02345794939394559540</td>
+                            <td>25/04/2019</td>
+                            <td>94325734975238573257035390</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="width: 100%" id="footer">
+        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+            <ul id="meusValesUl">
+                <li id="meusVales">
+                    <span id="cartoes">
+                        <a href="" id="cartoes">Meus Vales</a>
+                    </span>
+                </li>
+                <li id="dados">
+                    <span id="cartoes">
+                        <a href="" id="cartoes">Meus Dados</a>
 
-<body id="background">
-    <div class="row" id="header">
-        <div class="justify-content-end col">
-            <div class="d-flex flex-row bd-highlight col">
-                <div class="p-2 bd-highlight col" id="progPact"><img src="..\assets\ProgramaPacto.png"></div>
-                <div class="p-2 ml-auto mt-3 bd-highlight"><a href="" id="vales"><img class="mr-1"
-                            src="..\assets\credit-card.png">Meus Vales</a></div>
-                <div class="p-2 mr-2 mt-3 highlight"><a id="dados" href=""><img class="mr-1"
-                            src="..\assets\file-graphic.png">Meus Dados</a></div>
-                <div class="p-2 bd-highlight"><a href=""><img src="..\assets\user.png"></a></div>
-                <div class="p-2 mr-2 mt-3 highlight"><a id="dados" href=""> Olá, Cosme Vinicius</a></div>
-            </div>
+                    </span>
+                </li>
+                <li id="regulamentos">
+                    <span id="cartoes">
+                        <a href="" id="cartoes">Regulamento</a>
+
+                    </span>
+                </li>
+                <li>
+                    <span id="cartoes">
+                        <a href="" id="cartoes">Termos de Troca</a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12" id="icons">
+            <li>
+                <a href="https://www.varilux.com.br"><img src="..\assets\Varilux.png"></a>
+            </li>
+            <li>
+                <a href="http://www.crizal.com.br/"><img src="..\assets\Crizal.png"></a>
+            </li>
+            <li>
+                <a href="http://www.transitions.com"><img src="..\assets\Transitions.png"></a>
+            </li>
+            <li>
+                <a href="https://www.essilor.pt/lentes/essilor-sun/lentes-polarizadas-xperio"><img
+                        src="..\assets\Xperio.png"></a>
+            </li>
+            <li>
+                <a href="https://www.eyezen.com.br/"><img src="..\assets\Eyezen.png"></a>
+            </li>
+            <li>
+                <a href="https://www.lenteskodak.com.br/"><img src="..\assets\LentesKodak.png"></a>
+            </li>
         </div>
     </div>
-    <div class="card-body" id="headerVale">
-        <p class="card-text" id="headerVale">Meus Vales</p>
-        <p id="square"></p>
-        <p class="card-text" id="busca">Busca</p>
-        <p class="card-text" id="texto-busca">Use o campo abaixo e pesquise tudo sobre números de vales, total ou código
-            de vouchers, produtos, status de vouchers e sua data de validade.</p>
-        <form class="example">
-            <input type="text" class="search-query mt-4" placeholder="Buscar..." />
-            <button class="btn mb-4"><i class="fa fa-search"></i></button>
-        </form>
-    </div>
-    <table class="table table-hover" id="tabela">
-        <thead>
-            <tr>
-                <th scope="col" id="headTable">Produto</th>
-                <th scope="col" id="headTable">Status do Voucher</th>
-                <th scope="col" id="headTable">Código do Voucher</th>
-                <th scope="col" id="headTable">Validade do Voucher</th>
-                <th scope="col" id="headTable">Nota Fiscal</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Bloco Varilux</td>
-                <td id="bloqueado">BLOQUEADO</td>
-                <td>21225459649871541</td>
-                <td>24/03/2019</td>
-                <td>94325734975238573257035390</td>
-            </tr>
-            <tr>
-                <td>Bloco Varilux</td>
-                <td id="liberado">LIBERADO</td>
-                <td>21225459649871541</td>
-                <td>24/03/2019</td>
-                <td>94325734975238573257035390</td>
-            </tr>
-            <tr>
-                <td>Bloco Varilux</td>
-                <td id="liberado">LIBERADO</td>
-                <td>21225459649871541</td>
-                <td>24/03/2019</td>
-                <td>94325734975238573257035390</td>
-            </tr>
-            <tr>
-                <td>Bloco Varilux</td>
-                <td id="bloqueado">BLOQUEADO</td>
-                <td>21225459649871541</td>
-                <td>24/03/2019</td>
-                <td>94325734975238573257035390</td>
-            </tr>
-            <tr>
-                <td>Bloco Varilux</td>
-                <td id="liberado">LIBERADO</td>
-                <td>21225459649871541</td>
-                <td>24/03/2019</td>
-                <td>94325734975238573257035390</td>
-            </tr>
-            <tr>
-                <td>Bloco Varilux</td>
-                <td id="bloqueado">VENCIDO</td>
-                <td>21225459649871541</td>
-                <td>24/03/2019</td>
-                <td>94325734975238573257035390</td>
-            </tr>
-            <tr>
-                <td>Bloco Varilux</td>
-                <td id="liberado">LIBERADO</td>
-                <td>21225459649871541</td>
-                <td>24/03/2019</td>
-                <td>94325734975238573257035390</td>
-            </tr>
-            <tr>
-                <td>Bloco Varilux</td>
-                <td id="bloqueado">VENCIDO</td>
-                <td>21225459649871541</td>
-                <td>23/03/2019</td>
-                <td>94325734975238573257035390</td>
-            </tr>
-            <tr>
-                <td>Lente Varilux</td>
-                <td id="bloqueado">BLOQUEADO</td>
-                <td>02345794939394559540</td>
-                <td>25/04/2019</td>
-                <td>94325734975238573257035390</td>
-            </tr>
-        </tbody>
-    </table>
-    <div id="footer">
-        <div class="justify-content-end">
-            <div class="d-flex flex-row bd-highlight">
-                <div class="p-1 ml-3 highlight"><a id="cartoes" href="">Meus Vales |</a></div>
-                <div class="p-1 highlight"><a id="cartoes" href="">Meus Dados |</a></div>
-                <div class="p-1 highlight"><a id="cartoes" href="">Regulamento |</a></div>
-                <div class="p-1 mr-auto bd-highlight"><a id="cartoes" href="">Termos de Troca</a></div>
-                <div class="p-2 bd-highlight"><a href="https://www.varilux.com.br"><img src="..\assets\Varilux.png"></a>
-                </div>
-                <div class="p-2 bd-highlight"><a href="http://www.crizal.com.br/"><img src="..\assets\Crizal.png"></a>
-                </div>
-                <div class="p-2 bd-highlight"><a href="http://www.transitions.com"><img
-                            src="..\assets\Transitions.png"></a></div>
-                <div class="p-2 bd-highlight"><a
-                        href="https://www.essilor.pt/lentes/essilor-sun/lentes-polarizadas-xperio"><img
-                            src="..\assets\Xperio.png"></a></div>
-                <div class="p-2 bd-highlight"><a href="https://www.eyezen.com.br/"><img src="..\assets\Eyezen.png"></a>
-                </div>
-                <div class="p-2 bd-highlight"><a href="https://www.lenteskodak.com.br/"><img
-                            src="..\assets\LentesKodak.png"></a></div>
-            </div>
-        </div>
-    </div>
-</body>

@@ -6,7 +6,6 @@
   right: 0px;
   width: auto;
   height: auto;
-  
 }
 
 #background {
@@ -14,8 +13,9 @@
 }
 
 #footer {
+  width: 100%;
   bottom: 0px;
-  background-color: white;
+  background-color: #FFFFFF;
   left: 0px;
   right: 0px;
 }
@@ -52,28 +52,24 @@
   font-family: montSerratBold;
   font-size: 70px;
   color: #0044FF;
-  margin-left: 4%
 }
 
 #square {
   width: 15px;
   height: 15px;
   background: #FF5D38;
-  margin-left: 4.3%
 }
 
 #busca {
   font-family: montSerratBold;
   font-size: 30px;
   color: #FF5D38;
-  margin-left: 4%
 }
 
 #texto-busca {
   font-family: montSerratBold;
   font-size: 14px;
   color: #707070;
-  margin-left: 4%
 }
 
 #searchButton {
@@ -83,9 +79,12 @@
 }
 
 #tabela {
-  margin-left: 9%;
   margin-bottom: 4%;
   width: 75%;
+}
+
+#search {
+  margin-left: 0px;
 }
 
 #liberado {
@@ -95,23 +94,43 @@
   color: #7DC855;
 }
 
-#bloqueado{
+#bloqueado {
   font-family: openSans;
   font-size: 13px;
   font-weight: bold;
   color: #FF3B3B;
 }
 
-#headTable{
+#headTable {
   font-family: helveticaNeueBold;
   font-size: 15px;
   color: #707070;
 }
 
-.form-control {
-  width: 25%;
-  margin-left: 4%;
-  margin-right: 70%;
+#footer {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  margin-left: 0px;
+}
+
+#footer ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+#footer li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#bar {
+  margin-left: 10px;
+}
+
+#icons {
+  text-align: right;
+  padding-right: 0px;
 }
 
 form.example input[type=text] {
@@ -153,4 +172,211 @@ td {
 
 .table td {
   text-align: center;
+}
+
+#containerVale {
+  margin-left: 200px;
+  margin-right: 0px;
+}
+
+#header ul {
+  padding-left: 125px;
+  list-style-type: none;
+}
+
+#headerRight {
+  text-align: right;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+#header li {
+  display: inline-block;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+#userIcon {
+  width: 25px;
+}
+
+@media (min-width: 1281px) {
+  .bg {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bg {
+    height: 100%;
+  }
+  #ulProg {
+    margin-left: 80px;
+    margin-bottom: 0px;
+  }
+  #header {
+    margin-left: 0px;
+  }
+  #headerRight {
+    text-align: left;
+    margin-left: 10px;
+  }
+  #header ul {
+    padding: 0;
+  }
+  #vales {
+    padding-left: 35px;
+    padding-right: 5px;
+  }
+  #dados li{
+    padding-right: 2px;
+    margin-right: 5px;
+  }
+  #regulamentos{
+    margin-left: 0px;
+  }
+  #iconUser {
+    padding-left: 64px;
+  }
+  #imgPacto {
+    width: 150px;
+    margin-left: 10px;
+  }
+  #progPacto {
+    margin-left: 0px;
+  }
+  #containerVale {
+    margin-left: 1px;
+  }
+  #headerMeusVales {
+    padding-top: 90px;
+  }
+  #search {
+    width: 70%
+  }
+  #headerVale {
+    margin-left: 20px;
+  }
+  #tabela {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-left: 1px;
+  }
+  #table td {
+    padding-left: 15px;
+  }
+  .table{
+    margin-left: 15px;
+  }
+  #divRight {
+    padding-left: 10px;
+  }
+  #regulamentos {
+    margin-left: 35px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #bg {
+    height: 100%;
+  }
+  #ulProg {
+    margin-left: 70px;
+    margin-bottom: 0px;
+  }
+  #header {
+    margin-left: 0px;
+  }
+  #headerRight {
+    text-align: left;
+    margin-left: 10px;
+  }
+  #divRight {
+    margin-left: 15px;
+  }
+  #header ul {
+    padding: 0;
+  }
+  #vales {
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+  #dados {
+    padding-right: 2px;
+  }
+  #iconUser {
+    padding-left: 40px;
+  }
+  #imgPacto {
+    width: 150px;
+    margin-left: 0px;
+  }
+  #progPacto {
+    margin-left: 0px;
+  }
+  #containerVale {
+    margin-left: 1px;
+  }
+  #headerMeusVales {
+    padding-top: 130px;
+  }
+  #search {
+    width: 70%
+  }
+  #headerVale {
+    margin-left: 20px;
+  }
+  #tabela {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-left: 1px;
+  }
+  .table{
+    margin-left: 15px;
+  }
+  #table td {
+    padding-left: 15px;
+  }
+  #meusVales {
+    margin-left: 50px;
+  }
+  #icons {
+    text-align: center;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  #headerMeusVales {
+    padding-top: 110px;
+  }
+  #ulProg {
+    margin-left: 50px;
+  }
+  #vales {
+    padding-left: 10px;
+  }
+  #header li {
+    padding-left: 0px;
+  }
+  #iconUser {
+    padding-left: 40px;
+  }
+  #ulProg {
+    margin-left: 60px;
+  }
+  #meusValesUl {
+    margin-left: 0px;
+  }
+  #meusVales {
+    margin-left: 55px;
+  }
+  #divFooter {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
